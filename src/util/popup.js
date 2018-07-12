@@ -12,6 +12,6 @@ const getPopupDimensions = (width, height) => {
 }
 
 const openPopup = (url, name, width, height) =>
-  window.open(url, name, `${SETTINGS},${getPopupDimensions(width, height)}`)
+  window.open(url, '_self', `${SETTINGS},${getPopupDimensions(width, height)}`)
 
 export default openPopup
